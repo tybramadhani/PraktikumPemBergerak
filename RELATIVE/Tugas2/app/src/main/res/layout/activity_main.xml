@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="368dp"
+    android:layout_height="495dp"
+    tools:context=".MainActivity"
+    app:layout_editor_absoluteX="8dp"
+    app:layout_editor_absoluteY="8dp"
+    android:background="#ef0000">
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="141dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="89dp"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="28sp"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="ID"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:typeface="normal"
+        android:layout_below="@+id/login"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/isi_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter ID"
+        android:layout_alignBaseline="@+id/id"
+        android:layout_alignBottom="@+id/id"
+        android:layout_alignLeft="@+id/isipassword"
+        android:layout_alignStart="@+id/isipassword"/>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/isipassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"/>
+
+    <EditText
+        android:id="@+id/isipassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id" />
+
+    <Button
+        android:id="@+id/L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/isipassword"
+        android:layout_marginTop="32dp"
+        android:text="LOGIN" />
+
+
+</RelativeLayout>
